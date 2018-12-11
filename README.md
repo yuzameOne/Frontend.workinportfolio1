@@ -1,1 +1,4 @@
-# Frontend.workinportfolio1
+Technology stack: Html,
+                  Css
+                  Bootstrap4,
+                  Sass.
