@@ -1,4 +1,4 @@
 Technology stack: Html,
-                  Css
+                  Css,
                   Bootstrap4,
                   Sass.
