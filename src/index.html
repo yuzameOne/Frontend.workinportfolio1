@@ -64,6 +64,97 @@
           </div>
       </main>
 
+         <section class="features">
+           <div class="container">
+             <h2 class="section-header">
+               Преимущества работы с нами
+             </h2>
+             <div class="features-slider">
+                <div class="features-block">
+                   <div class="features-img">
+                     <picture>
+                       <source srcset="img/features/coin.svg" type="image/">
+                       <img src="img/features/coin.png" alt="Платите по факту">
+                     </picture>
+                   </div>
+                   <h3>Платите по факту</h3>
+                   <p>Вы оплачиваете выполненные работы только после их выполнения.Никаких скрытых доплат и промежуточных платежей.</p>
+                 </div>
+                 <div class="features-block">
+                   <div class="features-img">
+                     <picture>
+                       <source srcset="img/features/folder.svg" type="image/">
+                       <img src="img/features/open-folder-with-document.png" alt="Заключаем договор">
+                     </picture>
+                   </div>
+                   <h3>Заключаем договор</h3>
+                   <p>Перед началом работ заключаем договор на юридическое лицо.Вы можете быть уверены, что все обязательства будут выполнены.</p>
+                 </div>
+                 <div class="features-block">
+                   <div class="features-img">
+                     <picture>
+                       <source srcset="img/features/clock.svg" type="image/">
+                       <img src="img/features/clock-circular-outline.png" alt="Точно в срок">
+                     </picture>
+                   </div>
+                   <h3>Точно в срок </h3>
+                   <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше</p>
+                 </div>
+                 <div class="features-block">
+                   <div class="features-img">
+                     <picture>
+                       <source srcset="img/features/pig.svg" type="image/">
+                       <img src="img/features/piggy-bank .png" alt="Экономите на материалах">
+                     </picture>
+                   </div>
+                   <h3>Экономите на материалах</h3>
+                   <p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru  и даём Вам самые выгодные цены.</p>
+                 </div> 
+             </div>
+           </div>
+         </section>
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+        <script src="slick-1.8.1/slick/slick.min.js"></script>
+        <!-- settings slider -->
+        <script>
+        $(document).ready(function(){
+        $('.features-slider').slick({
+       infinite: true,
+       slidesToShow: 4,
+       slidesToScroll: 1,
+       autoplay: true,
+       speed: 3000,
+       autoplaySpeed: 3500,
+       responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 577,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+            });
+         });
+</script>
+
+
+
+
+
+
+
+
+
     </body>
 </html>

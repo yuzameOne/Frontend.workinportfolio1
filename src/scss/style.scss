@@ -202,6 +202,45 @@ margin-top: 1.9rem;
 	line-height: 7rem;
 	color:$text;
 }
+/* блок с преимуществами */
+.section-header{
+	text-align:center;
+	margin:2rem 0 10rem;
+	@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+	font-weight: 900;
+	font-size: 3.6rem;
+}
+
+.features{
+	&-block{
+		text-align: center;
+		h3{
+			font-size: 2rem;
+			font-weight: 900;
+			margin-bottom: 3rem;
+			@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+		}
+		p{
+			display:inline-block;
+			width: 80%;
+			font-size: 1.4rem;
+		}
+	}
+
+	&-img {
+  height: 9rem;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+		img{
+		display:block;
+		margin: 0 auto;
+	}
+	}
+}
+.slick-active{
+	outline:none;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px){
 	.main{
