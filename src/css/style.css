@@ -18,6 +18,7 @@
 /*basic setting */
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,15 @@ body {
   src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus, input:focus, a:focus {
+  outline: none;
 }
 
 .button {
@@ -36,6 +46,11 @@ body {
   border-radius: 8px;
   text-transform: uppercase;
   border: none;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #fec84a;
 }
 
 /* typography */
@@ -53,6 +68,7 @@ section {
   margin-top: 10rem;
 }
 .main-content h1 {
+  margin-top: 0;
   margin-bottom: 5rem;
   line-height: 1.4;
   font-family: "ProximaNova_bold";
@@ -103,7 +119,7 @@ section {
   /*header form */
   /* поле ввода */
   /*подписи к полям*/
-  /*кнопка отправить */
+  /* кнопка оставить заявку */
   /* подпись */
 }
 .main-form-header {
@@ -132,7 +148,7 @@ section {
 .main-form-btn {
   display: block;
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   font-size: 1.6rem;
 }
 .main-form small {
@@ -167,6 +183,65 @@ section {
   height: 7rem;
   line-height: 7rem;
   color: #1a1820;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+
+  .phone-block {
+    text-align: center;
+  }
+
+  .main-content {
+    margin-top: 3rem;
+  }
+
+  .main-tittle {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  .main-trigger {
+    width: 690px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .wrap-block {
+    text-align: center;
+  }
+
+  .main-content {
+    margin-top: 15rem;
+  }
+
+  .main-tittle {
+    text-align: center;
+  }
+
+  .main-tittle {
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .main-trigger {
+    width: 505px;
+    text-align: center;
+  }
+
+  .main-form-header {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

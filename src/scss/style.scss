@@ -60,9 +60,19 @@ $border-input : #dddddd;
 
 html{
 	font-size:10px;
+		overflow-x: hidden;
 }
 body{
 	@include font_regular("ProximaNova_reg","../fonts/ProximaNova-Regular");
+	overflow-x: hidden;
+}
+a:hover{
+	text-decoration: none;
+}
+button, input, a{
+	&:focus{
+		outline:none ;
+	}
 }
 .button{
 	font-size:1.2rem;
@@ -72,6 +82,11 @@ body{
 	border-radius: 8px;
 	text-transform: uppercase;
 	border:none;
+	transition: all 0.2s;
+	&:hover{
+  cursor:pointer;
+  background-color: lighten($btn-colors,15%);
+	}
 }
 
 /* typography */
@@ -86,6 +101,7 @@ section{
 	&-content{
 		margin-top: 10rem;
 		h1{
+			margin-top:0;
 			margin-bottom: 5rem;
 			line-height: 1.4; 
 			@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
@@ -149,18 +165,18 @@ section{
 			padding:0.5rem;
 			background-color:$light;
 		}
-		/*кнопка отправить */
+		/* кнопка оставить заявку */
 		&-btn{
 			 display:block;
 			 width: 100%;
-			 height: 5rem;
+			 height: 6rem;
 			 font-size: 1.6rem; 
 		}
 		/* подпись */
 small{
 display:block;
 font-size: 1.2rem;
-margin-top: 1.9rem;;
+margin-top: 1.9rem;
 }
 		
 	}
@@ -186,3 +202,60 @@ margin-top: 1.9rem;;
 	line-height: 7rem;
 	color:$text;
 }
+
+@media (min-width: 768px) and (max-width: 991px){
+	.main{
+		background-position:top right;
+		}
+		.phone-block{
+		text-align:center;
+	}
+	.main-content{
+	margin-top:3rem;
+	}
+.main-tittle{
+	padding-bottom: 3rem;
+    text-align:center;
+ }
+.main-trigger{
+	width: 690px;
+	text-align:center;
+}
+}
+@media(max-width: 767px){
+	.main{
+		background-position:top left;
+	}
+	.header{
+		text-align: center;
+	}
+	.wrap-block{
+		text-align:center;
+	}
+	.main-content {
+    margin-top: 15rem;  
+}
+.main-tittle{
+    	text-align: center;
+    }
+.main-tittle{
+	padding-bottom: 3rem;
+ }
+}
+@media(min-width: 576px)and(max-width: 767px) {
+.main-trigger{
+	width: 505px;
+	text-align:center;
+}
+.main-form-header {
+    font-size: 1.2rem;
+}
+}
+
+
+
+
+
+
+
+
