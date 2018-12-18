@@ -240,6 +240,92 @@ margin-top: 1.9rem;
 .slick-active{
 	outline:none;
 }
+/* Всплывающие  модальное окно*/ 
+
+.popup{
+	display:none;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color:rgba(0,0,0,0.5);
+	&-content{
+		position:fixed;
+		top:10%;
+	left:50%;
+	transform:translateX(-50%);
+	padding:4rem 6rem;
+	background-color:$light;
+	}
+	&-close{
+		position:absolute;
+		top:-1.2rem;
+		right:-2rem;
+		width: 2rem;
+	 text-align: center;
+	 border:none;
+	 background-color:transparent;
+	 font-size:2.5rem;
+	 color:$light;
+	}
+	&-content{
+		text-align:center;
+		p{
+			font-size: 1.4rem;
+		}
+	}
+	&-header{
+		@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+		font-size: 1.8rem;
+	}
+
+	&-form{
+		background-color: $light;
+		text-align: center;
+		/*header form */
+		&-header{
+			margin-bottom:4rem;
+			font-size: 1.6rem;
+			
+		}
+		/* поле ввода */
+		&-input{
+			display:block;
+			margin:2rem 0 ;
+			width: 100%;
+			padding: 1.5rem;
+			border: 1px solid $border-input;
+			outline:none;
+		}
+		/*подписи к полям*/
+		label{
+			position: absolute;
+			display:inline-block;
+			left:50%;
+			font-size: 1.3rem;
+			transform: translateX(-50%) translateY(-50%);
+			padding:0.5rem;
+			background-color:$light;
+		}
+		/* кнопка оставить заявку */
+		&-btn{
+			 display:block;
+			 width: 100%;
+			 height: 6rem;
+			 font-size: 1.6rem; 
+		}
+		/* подпись */
+small{
+display:block;
+font-size: 1.2rem;
+margin-top: 1.9rem;
+}
+	}
+}
 
 
 @media (min-width: 768px) and (max-width: 991px){

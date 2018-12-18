@@ -230,6 +230,94 @@ section {
   outline: none;
 }
 
+/* Всплывающие  модальное окно*/
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4rem 6rem;
+  background-color: #fff;
+}
+.popup-close {
+  position: absolute;
+  top: -1.2rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.popup-content {
+  text-align: center;
+}
+.popup-content p {
+  font-size: 1.4rem;
+}
+.popup-header {
+  font-family: "ProximaNova_bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+.popup-form {
+  background-color: #fff;
+  text-align: center;
+  /*header form */
+  /* поле ввода */
+  /*подписи к полям*/
+  /* кнопка оставить заявку */
+  /* подпись */
+}
+.popup-form-header {
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+}
+.popup-form-input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #dddddd;
+  outline: none;
+}
+.popup-form label {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  font-size: 1.3rem;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #fff;
+}
+.popup-form-btn {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  font-size: 1.6rem;
+}
+.popup-form small {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1.9rem;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .main {
     background-position: top right;
