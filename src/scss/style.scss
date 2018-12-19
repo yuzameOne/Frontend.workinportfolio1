@@ -240,6 +240,64 @@ margin-top: 1.9rem;
 .slick-active{
 	outline:none;
 }
+
+/* блок с ценами */
+
+.price{
+	background-color:#286c0a;
+	color:$light;
+	h2{
+		 @include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+		font-size: 3.6rem;
+	}
+	p{
+		font-size: 1.4rem;
+		padding-bottom: 9rem;
+	}
+	&-tag{
+		display:block;
+		font-size: 1.9rem;
+		color:black;
+		margin-bottom: 2rem ;
+	}
+	&-block{
+		background-color:$light;
+		text-align: center; 
+		padding: 1rem 3rem;
+		width:35rem;
+		min-height: 60rem;
+		h4{
+			@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+		color:black;
+		font-size: 1.9rem;
+		margin: 3rem 0;
+	}
+	img{
+		display: inline-block;
+    margin-bottom: 2rem;
+	}
+.price-list{
+	color:black;
+	list-style: none;
+	font-size: 1.6rem;
+	@include font_regular("ProximaNova_reg","../fonts/ProximaNova-Regular");
+	min-height:16rem;
+	padding:0;
+	li{
+		&:before{
+			content:'';
+			display:inline-block;
+			margin-right: 1rem;
+			width: 1.4rem;
+			height: 1.4rem;
+			background: url(../img/checked.svg); /*ЧТО ТУТ НАХУЙ ПРОИСХОДИТ???????/*/
+			background-size:100%;
+			vertical-align:middle;
+		}
+	}
+	}
+}
+}
 /* Всплывающие  модальное окно*/ 
 
 .popup{
@@ -376,7 +434,11 @@ margin-top: 1.9rem;
     font-size: 1.2rem;
 }
 }
-
+@media(min-width: 992px)and(max-width:1200px){
+	.price-block{
+		width: 100%;
+	}
+}
 
 
 
