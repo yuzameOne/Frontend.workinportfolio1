@@ -174,6 +174,111 @@
             </div>
             </div>
           </section>
+          <!-- Feedback -->
+          <div class="feedback">
+            <div class="container">
+              <div class="section-header">
+                <h2>Отзывы</h2>
+                <div class="feedback-slider">
+                  <div class="feedback-slider_item">
+                     <div class="row">
+                       <div class="col-xl-6">
+                         <div class="fotorama" data-nav="thumbs">
+                           <img src="img/feedback/1.jpg" alt="">
+                           <img src="img/feedback/2.jpg" alt="">
+                           <img src="img/feedback/3.jpg" alt="">
+                           <img src="img/feedback/4.jpg" alt="">
+                           <img src="img/feedback/5.jpg" alt="">
+                           <img src="img/feedback/6.jpg" alt="">
+                         </div>
+                       </div>
+                       <div class="col-xl-6">
+                        <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+                        <p>Площадь: <strong>357 м2</strong></p>
+                        <p>Выполнен <strong>за: 10 дней</strong></p>
+                        <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+                        <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+  <div class="media">
+   <img class="mr-3" src="/img/feedback/avatar.png">
+   <div class="media-body mt-3">
+    <h6>Заказчик</h6>
+    <h5>Нахимов Артём</h5>
+    </div>
+    </div>
+    <div class="feedback-text">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum fugit numquam velit sapiente cum?</p>
+    </div>
+                      </div>
+                     </div>
+                   </div>
+                   <div class="feedback-slider_item">
+                     <div class="row">
+                       <div class="col-xl-6">
+                         <div class="fotorama" data-nav="thumbs">
+                           <img src="img/feedback/1.jpg" alt="">
+                           <img src="img/feedback/2.jpg" alt="">
+                           <img src="img/feedback/3.jpg" alt="">
+                           <img src="img/feedback/4.jpg" alt="">
+                           <img src="img/feedback/5.jpg" alt="">
+                           <img src="img/feedback/6.jpg" alt="">
+                         </div>
+                       </div>
+                       <div class="col-xl-6">
+                        <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+                        <p>Площадь: <strong>357 м2</strong></p>
+                        <p>Выполнен <strong>за: 10 дней</strong></p>
+                        <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+                        <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+   <div class="media">
+    <img class="mr-3" src="/img/feedback/avatar.png">
+    <div class="media-body mt-3">
+    <h6>Заказчик</h6>
+    <h5>Нахимов Артём</h5>
+    </div>
+    </div>
+    <div class="feedback-text">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum fugit numquam velit sapiente cum?</p>
+    </div>
+                      </div>
+                     </div>
+                   </div>
+                   <div class="feedback-slider_item">
+                     <div class="row">
+                       <div class="col-xl-6">
+                         <div class="fotorama" data-nav="thumbs">
+                           <img src="img/feedback/1.jpg" alt="">
+                           <img src="img/feedback/2.jpg" alt="">
+                           <img src="img/feedback/3.jpg" alt="">
+                           <img src="img/feedback/4.jpg" alt="">
+                           <img src="img/feedback/5.jpg" alt="">
+                           <img src="img/feedback/6.jpg" alt="">
+                         </div>
+                       </div>
+                       <div class="col-xl-6">
+                        <p>Объект: г.Москва, Нахимовский проспект д.10</p>
+                        <p>Площадь: <strong>357 м2</strong></p>
+                        <p>Выполнен <strong>за: 10 дней</strong></p>
+                        <p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+                        <p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+  <div class="media">
+   <img class="mr-3" src="/img/feedback/avatar.png">
+   <div class="media-body mt-3">
+    <h6>Заказчик</h6>
+    <h5>Нахимов Артём</h5>
+   </div>
+   </div>
+   <div class="feedback-text">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorum fugit numquam velit sapiente cum?</p>
+    </div>
+                       </div>
+                     </div>
+                   </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- feedbackend -->
+
            <!-- modal window -->
            <!-- get consultation -->
            <div class="popup">
@@ -206,6 +311,9 @@
         <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
         <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
         <script src="slick-1.8.1/slick/slick.min.js"></script>
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
         <!-- settings slider -->
         <script>
         $(document).ready(function(){
@@ -217,6 +325,13 @@
          event.preventDefault();
          $('.popup').fadeOut();
        });
+        /*slider feedback*/
+        $('.feedback-slider').slick({
+          prevArrow : '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="img/feedback/leftArrow.svg"></button>',
+          nextArrow : '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="img/feedback/rightArrow.svg"></button>'
+
+        });
+        /*slider feedback end*/
         $('.features-slider').slick({
        infinite: true,
        slidesToShow: 4,
@@ -243,5 +358,9 @@
             });
          });
 </script>
+<!-- browser-sync -->
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+//]]></script>
     </body>
 </html>
