@@ -376,6 +376,7 @@ section {
 }
 .feedback-form {
   margin-top: 5rem;
+  margin-bottom: 10rem;
   padding: 6rem 14rem;
   text-align: center;
   background-color: #fff;
@@ -425,8 +426,60 @@ section {
 .hand {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -10px;
   max-width: 30%;
+}
+
+/*block scheme*/
+.scheme {
+  position: relative;
+  background-color: #ffffff;
+}
+.scheme h2 {
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "ProximaNova_bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+.scheme p {
+  font-family: "ProximaNova_reg";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.scheme img {
+  margin-bottom: 3.3rem;
+}
+.scheme-hand {
+  position: absolute;
+  right: 0;
+  top: -104px;
+  transform: translate(8px, 323px);
+  width: 59rem;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme-block h3 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  font-family: "ProximaNova_bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+.scheme-p_marginBottom {
+  margin-bottom: 6.5rem;
 }
 
 /* Всплывающие  модальное окно*/

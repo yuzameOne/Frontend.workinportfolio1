@@ -364,6 +364,7 @@ margin-top: 1.9rem;
 	/*feedbackform*/
 	&-form{
 		margin-top: 5rem;
+		margin-bottom: 10rem;
 		padding: 6rem 14rem;
 		text-align: center;
 		background-color:$light;
@@ -407,8 +408,48 @@ h6{
 .hand{
 	position:absolute;
 	bottom:0;
-	left:0;
+	left:-10px;
 	max-width: 30%;
+}
+
+/*block scheme*/
+.scheme{
+	position:relative;
+	background-color:#ffffff;
+	h2{
+		margin-top: 12rem;
+		margin-bottom: 5rem;
+		font-size: 3.6rem;
+		font-weight: 700;
+			@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+	}
+	p{
+		@include font_regular("ProximaNova_reg","../fonts/ProximaNova-Regular");
+		font-size: 1.7rem;
+		font-weight: 400;
+		line-height: 1.25;
+	}
+	img{
+		margin-bottom: 3.3rem;
+	}
+	&-hand{
+		position: absolute;
+  right: 0;
+  top: -104px;
+  transform: translate(8px, 323px);
+  width: 59rem;
+	}
+	&-block{
+		min-height:30rem;
+	h3{
+		font-size: 2.2rem;
+		margin-bottom: 3rem;
+  @include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+	}
+	}
+	&-p_marginBottom{
+		margin-bottom: 6.5rem;
+	}
 }
 /* Всплывающие  модальное окно*/ 
 
@@ -496,6 +537,7 @@ margin-top: 1.9rem;
 }
 	}
 }
+
 
 
 @media (min-width: 768px) and (max-width: 991px){
