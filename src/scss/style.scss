@@ -300,9 +300,16 @@ margin-top: 1.9rem;
 }
 /*секция с отзывами */
 .feedback{
+	position:relative;
 	background:url(../img/feedback/feedback-bg.jpg) no-repeat center;
 	background-size:cover;
 	margin-top:-1.7rem;
+	h2{
+		padding-top: 10rem;
+		padding-bottom: 6rem;
+		@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+		font-size: 3.6rem;
+	}
 	&-text{
 		position:relative;
 		margin-top: 2rem;
@@ -354,8 +361,33 @@ margin-top: 1.9rem;
 	 		@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
 	       }
 	}
-}
+	/*feedbackform*/
+	&-form{
+		margin-top: 5rem;
+		padding: 6rem 14rem;
+		text-align: center;
+		background-color:$light;
+		//width: 74rem;
+		h3{
+			@include font_bold("ProximaNova_bold","../fonts/ProximaNova-Bold");
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		}
+label{
+	transform: translate(0, 37px);
+		background-color:$light;
+		font-size: 1.6rem;
 
+	}
+}
+&-btn{
+	max-width: 30rem;
+	margin:auto;
+}
+}
+.row-form{
+	margin: 0 auto;
+}
 
 /*отзыв внутри салйдера*/
 .media{
@@ -371,6 +403,13 @@ h6{
 }
 }
 
+/*hand in feedback*/
+.hand{
+	position:absolute;
+	bottom:0;
+	left:0;
+	max-width: 30%;
+}
 /* Всплывающие  модальное окно*/ 
 
 .popup{
@@ -557,6 +596,57 @@ margin-top: 1.9rem;
 	.price_button-marginBottom{
 		margin-bottom:4rem;
 	}
+	}
+}
+/*price slider @media*/
+@media(min-width: 768px)and(max-width: 992px){
+	.feedback-form label{
+		transform: translate(0, 19px);
+	}
+	.feedback-form-input{
+		margin:0;
+	}
+	.feedback-btn{
+		margin:2rem auto 0;
+	}
+}
+
+@media(min-width: 577px)and(max-width: 767px){
+	.col-md-12{
+		margin-top:2rem;
+	}
+	.feedback-form label{
+		transform: translate(0, 19px);
+	}
+	.feedback-form-input{
+		margin:0;
+	}
+	.feedback-btn{
+		margin:2rem auto 0;
+	}
+}
+@media(max-width:  576px){
+	.feedback-form{
+		padding:1rem 8rem;
+		label{
+    transform: translate(0, 19px);
+		}
+	}
+	.col-sm-12{
+		margin-top:2rem;
+	}
+	.feedback-prev-btn {
+    left: 0rem;
+}
+.feedback-next-btn {
+    right: 0rem;
+}
+
+.feedback-form-input{
+		margin:0;
+	}
+	.feedback-btn{
+		margin:2rem auto 0;
 	}
 }
 

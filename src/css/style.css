@@ -299,9 +299,21 @@ section {
 
 /*секция с отзывами */
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
   background-size: cover;
   margin-top: -1.7rem;
+  /*feedbackform*/
+}
+.feedback h2 {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  font-family: "ProximaNova_bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.6rem;
 }
 .feedback-text {
   position: relative;
@@ -362,6 +374,34 @@ section {
   font-weight: 900;
   font-style: normal;
 }
+.feedback-form {
+  margin-top: 5rem;
+  padding: 6rem 14rem;
+  text-align: center;
+  background-color: #fff;
+}
+.feedback-form h3 {
+  font-family: "ProximaNova_bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.feedback-form label {
+  transform: translate(0, 37px);
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+.feedback-btn {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.row-form {
+  margin: 0 auto;
+}
 
 /*отзыв внутри салйдера*/
 .media {
@@ -379,6 +419,14 @@ section {
   src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+/*hand in feedback*/
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30%;
 }
 
 /* Всплывающие  модальное окно*/
@@ -566,6 +614,65 @@ section {
   }
   .price .price_button-marginBottom {
     margin-bottom: 4rem;
+  }
+}
+/*price slider @media*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .feedback-form label {
+    transform: translate(0, 19px);
+  }
+
+  .feedback-form-input {
+    margin: 0;
+  }
+
+  .feedback-btn {
+    margin: 2rem auto 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .col-md-12 {
+    margin-top: 2rem;
+  }
+
+  .feedback-form label {
+    transform: translate(0, 19px);
+  }
+
+  .feedback-form-input {
+    margin: 0;
+  }
+
+  .feedback-btn {
+    margin: 2rem auto 0;
+  }
+}
+@media (max-width: 576px) {
+  .feedback-form {
+    padding: 1rem 8rem;
+  }
+  .feedback-form label {
+    transform: translate(0, 19px);
+  }
+
+  .col-sm-12 {
+    margin-top: 2rem;
+  }
+
+  .feedback-prev-btn {
+    left: 0rem;
+  }
+
+  .feedback-next-btn {
+    right: 0rem;
+  }
+
+  .feedback-form-input {
+    margin: 0;
+  }
+
+  .feedback-btn {
+    margin: 2rem auto 0;
   }
 }
 
