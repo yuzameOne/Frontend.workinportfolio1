@@ -434,8 +434,8 @@ section {
 .scheme {
   background-image: url(../img/scheme/scheme-hand.png);
   background-repeat: no-repeat;
-  background-position: 100% 48rem;
-  background-size: 49rem;
+  background-position: 141% 176%;
+  background-size: 54% 84%;
   margin-top: -2.5rem;
   background-color: #FCFCFC;
 }
@@ -572,6 +572,25 @@ section {
   display: block;
   font-size: 1.2rem;
   margin-top: 1.9rem;
+}
+
+/*all-inclusive*/
+.circle {
+  display: inline-block;
+  background-color: #70c849;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #70c849;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  padding: 0.3rem;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -733,52 +752,38 @@ section {
   }
 }
 /*block scheme*/
-/*@media(min-width: 1209px)and(max-width: 1400){
-	.scheme{
-	background-color:red;
-	}
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  .scheme {
+    background: none;
+  }
+  .scheme span {
+    display: block;
+  }
+  .scheme-block {
+    text-align: center;
+  }
 }
-@media(min-width: 992px)and(max-width: 1199px){
-.scheme{
-	span{
-		display:block;
-	}
-	&-hand{
-		display:none;
-	}
-	&-block{
-		text-align:center;
-	}
+@media (min-width: 768px) and (max-width: 991px) {
+  .scheme {
+    background: none;
+  }
+  .scheme span {
+    display: block;
+  }
+  .scheme-block {
+    text-align: center;
+  }
 }
+@media (min-width: 576px) and (max-width: 767px) {
+  .scheme {
+    background: none;
+  }
+  .scheme span {
+    display: block;
+  }
+  .scheme-block {
+    text-align: center;
+  }
 }
-
-@media(min-width: 768px)and(max-width: 991px){
-.scheme{
-	span{
-		display:block;
-	}
-	&-hand{
-		display:none;
-	}
-	&-block{
-		text-align:center;
-	}
-}
-}
-
-@media(min-width: 576px)and(max-width: 767px){
-.scheme{
-	/*span{
-		display:block;
-	}*/
-/*&-hand{
-		display:none;
-	}
-	&-block{
-		text-align:center;
-	}
-}
-}*/
 
 /*# sourceMappingURL=style.css.map */

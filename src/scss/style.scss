@@ -416,10 +416,9 @@ h6{
 .scheme{
 	background-image:url(../img/scheme/scheme-hand.png);
 	background-repeat:no-repeat;
-	background-position: 100% 48rem;
-	background-size:49rem;
+	background-position: 141% 176%;
+ background-size: 54% 84%;
 	margin-top:-2.5rem;
-	//position:relative;
 	background-color:#FCFCFC;
 	h2{
 		padding-top: 12rem;
@@ -540,6 +539,24 @@ display:block;
 font-size: 1.2rem;
 margin-top: 1.9rem;
 }
+	}
+}
+/*all-inclusive*/
+.circle{
+	display: inline-block;
+	background-color: $icon-color;
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+	&-border{
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		border:2px solid $icon-color;
+		border-radius:50%;
+		text-align: center;
+		line-height: 4rem;
+		padding:0.3rem;
 	}
 }
 
@@ -697,19 +714,11 @@ margin-top: 1.9rem;
 	}
 }
 /*block scheme*/
-/*@media(min-width: 1209px)and(max-width: 1400){
-	.scheme{
-	background-color:red;
-	}
-		 
-}
 @media(min-width: 992px)and(max-width: 1199px){
 .scheme{
+	background:none;
 	span{
 		display:block;
-	}
-	&-hand{
-		display:none;
 	}
 	&-block{
 		text-align:center;
@@ -719,11 +728,9 @@ margin-top: 1.9rem;
 
 @media(min-width: 768px)and(max-width: 991px){
 .scheme{
+	background:none;
 	span{
 		display:block;
-	}
-	&-hand{
-		display:none;
 	}
 	&-block{
 		text-align:center;
@@ -733,17 +740,15 @@ margin-top: 1.9rem;
 
 @media(min-width: 576px)and(max-width: 767px){
 .scheme{
-	/*span{
+	background:none;
+	span{
 		display:block;
-	}*/
-	/*&-hand{
-		display:none;
 	}
 	&-block{
 		text-align:center;
 	}
 }
-}*/
+}
 
 
 
