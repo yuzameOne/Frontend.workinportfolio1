@@ -638,6 +638,76 @@ section {
   font-style: normal;
 }
 
+/* Problems */
+.problems {
+  position: relative;
+}
+.problems h2 {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  color: #000000;
+}
+.problems-girl {
+  position: absolute;
+  /*top:48%;
+  left:37%;
+  width: 30rem;*/
+  width: 30rem;
+  left: 50%;
+  bottom: 0;
+  margin-left: -19rem;
+}
+.problems-list {
+  border: 4px solid;
+  padding: 2rem;
+  min-height: 41rem;
+}
+.problems-list h4 {
+  font-size: 2.1rem;
+  font-family: "ProximaNova_bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+.problems-list ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+.problems-list ul li {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 3.5rem;
+}
+.problems-list ul li:before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.problems-list_bad {
+  border-color: #e8e8e8;
+}
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+.problems-list_bad ul li:before {
+  background: url(../img/problems/problem.svg) center no-repeat;
+  background-size: 70%;
+}
+.problems-list_good {
+  border: 4px solid #358015;
+}
+.problems-list_good ul li:before {
+  background: url(../img/problems/checked.svg) center no-repeat;
+  background-size: 70%;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .main {
     background-position: top right;
