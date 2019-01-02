@@ -708,6 +708,42 @@ section {
   background-size: 70%;
 }
 
+/* materials */
+.materials {
+  max-height: 78.5rem;
+  background-image: url(../img/materials/bg-materials.png);
+}
+.materials p {
+  font-size: 1.9rem;
+}
+.materials h2 {
+  padding-top: 2.5rem;
+  font-size: 3.6rem;
+  color: #000000;
+}
+.materials h3 {
+  padding-top: 3rem;
+}
+.materials-offer {
+  margin-top: 9rem;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials-link {
+  font-size: 1.5rem;
+  color: #70c849;
+  border-bottom: 1px dashed #70c849;
+}
+.materials-link:hover {
+  color: #305c1c;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+  min-height: 18rem;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .main {
     background-position: top right;

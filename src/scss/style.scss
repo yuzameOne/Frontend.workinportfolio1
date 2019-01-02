@@ -658,6 +658,42 @@ margin-top: 1.9rem;
 		}
 	}
 }
+/* materials */
+.materials
+ {
+ 	max-height: 78.5rem;
+ 	background-image:url(../img/materials/bg-materials.png);
+	p{
+		font-size: 1.9rem;
+	}
+	h2{
+		padding-top: 2.5rem;
+		font-size: 3.6rem;
+		color:#000000;
+	}
+	h3{
+		padding-top: 3rem;
+	}
+	&-offer{
+		margin-top: 9rem;
+	}
+	&-slider{
+		padding-top:5rem;
+	}
+	&-link{
+		font-size: 1.5rem;
+		color:$icon-color;
+		border-bottom:1px dashed $icon-color;
+		&:hover{
+			color:darken($icon-color, 30%);
+		}
+	}
+	img{
+		display:block;
+		margin:0 auto;
+		min-height: 18rem;
+	}
+}
 
 @media (min-width: 768px) and (max-width: 991px){
 	.main{
