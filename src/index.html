@@ -125,7 +125,7 @@
                     <p>Выберите вариант,который подходит Вам </p>
                   </div>
                   <div class="col-xl-4 price_button-marginBottom">
-                    <button class="button" data-toggle="modal">Рассчитать точную стоимость</button>
+                    <button class="button price-button" data-toggle="modal">Рассчитать точную стоимость</button>
                   </div>
               </div>
 
@@ -465,7 +465,7 @@
                   <h2>Мы развеем все опасения</h2>
                 </div><!-- section-header end -->
                 <div class="row">
-                    <div class="col-xl-5">
+                    <div class="col-xl-5  offset-xl-0 col-lg-10 offset-lg-1">
                       <div class="problems-list problems-list_bad wow fadeInRight" data-wow-delay="0.6s">
                         <h4>Какие могут быть проблемы:</h4>
                         <ul>
@@ -476,7 +476,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col-xl-5 offset-xl-2">
+                    <div class="col-xl-5 offset-xl-2 col-lg-10 offset-lg-1">
                       <div class="problems-list problems-list_good wow fadeInLeft" data-wow-delay="0.6s">
                         <h4>Наше решение:</h4>
                         <ul>
@@ -539,7 +539,7 @@
                    <a class ="materials-link" href="#">Сертификат</a>
                  </div>
                </div>
-               <p class="materials-offer">Вы можете приобрести материалы по оптовым ценам на сайте <a class="materials-link" href="#">gicema.ru</a> или  по телефону  <strong>+7 495 790 69 90</strong></p>
+               <p class="materials-offer ">Вы можете приобрести материалы по оптовым ценам на сайте <a class="materials-link cancelDisplayProperty" href="#">gicema.ru</a> или  по телефону  <strong>+7 495 790 69 90</strong></p>
                </div><!-- section-header end -->
              </section><!-- materials end -->
              <section class="tour">
@@ -605,7 +605,7 @@
                 <section class="contacts">
                   <div class="container">
                     <div class="row">
-                      <div class="col-lx-6">
+                      <div class="col-xl-6 col-md-8 offset-md-2">
                         <h2>Контакты</h2>
                         <p>Адрес офиса: <br>Челябинск, копейское шоссе, 12, офис 34</p>
                         <div class="map"> 
@@ -614,7 +614,7 @@
                          <p>Email <br><a class="contacts-link" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a></p>
                         <p>Реквизиты: <br>ИНН 35453453  ОГРН 34234234</p>
                       </div> 
-                      <div class="col-xl-4 offset-xl-2">
+                      <div class="col-xl-4 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
                          <div class="main-form">
                       <h2 class="contacts-form-header">Оставьте контактные данные для связи</h2>
                      <form action="#">
@@ -635,19 +635,19 @@
                 <footer>
                   <div class="container">
                     <div class="row">
-                      <div class="col-xl-4">
+                      <div class="col-xl-4 col-lg-4  col-md-4 col-sm-12">
                          <div class="logo">
                             <img src="img/logo.png" alt="Гипсолит">
                         </div>
                       </div>
-                      <div class="col-xl-4">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                         <div class="footer-contacts">
                            <p><strong>+7 495 771 05 08 </strong></p>
                            <p><a class="contacts-link" href="mailto:order@gipsolit.ru">order@gipsolit.ru</a></p>
                           <p class="contacts-link" >режим работы с 9.00 до 18.00</p>
                         </div>
                       </div>
-                      <div class="col-xl-4">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                         <div class="footer-dev">
                           <p>Разработка сайта:</p>
                           <img src="img/footer/dev-logo.jpg" alt="">
@@ -699,7 +699,11 @@
         </script>
 
           <script>
-            new WOW().init();
+            wow = new WOW({
+              mobile:      true,
+              live:         true 
+            })
+            wow.init();
           </script>
 
         <!-- settings slider -->
