@@ -1157,6 +1157,144 @@ footer{
 }
 }
 
+@media(min-width: 320px)and(max-width: 575px ){
+	.main-tittle{
+		h1{
+			font-size: 2.4rem;
+		}
+	}
+	.price{
+		.section-header{
+			h2{
+				padding-top:0;
+				padding-bottom:0;
+			}
+			p{
+				padding-bottom: 0;
+			}
+		}
+		.button{
+			margin-bottom: 4rem;
+		}
+		&-block{
+			width: 29rem;
+			margin-bottom: 3rem;
+			img{
+				width: 24rem;
+			}
+		}
+	}
+	.feedback{
+		&-next-btn{
+  right: 0rem;
+		}
+		&-prev-btn{
+			left: 0rem;
+		}
+		&-form{
+		padding: 3rem 5rem;
+		label{
+			transform: translate(0, 18px);
+		}
+		}
+		&-btn{
+			margin-top:2rem
+		}
+	}
+	.row-form{
+		width: 30rem;
+	}
+	.main-form-input{
+		margin:0;
+	}
+	.scheme{
+		background-image: none;
+		&-block{
+    text-align: center;
+		}
+	}
+	.problems{
+		&-list{
+			margin-top: 3rem;
+		}
+		&-girl{
+			    display: none;
+		}
+	}
+	.materials{
+		max-height: 105rem;
+	&-link{
+		display:block;
+		border-bottom: 1px #70c849;
+		padding-top:2rem;
+	}
+}
+.tour{
+		margin-top: 0rem;
+		background-color:#f2f2f2;
+		background-image: none;
+		&-input{
+			margin-bottom: 2rem;
+		}
+		//	background:  url(../img/tour/bg-tour.jpg)  100% 100%  no-repeat;
+		.main-tittle h1 {
+    margin-top: -16rem;
+}
+	}
+.upsell{
+	h2{
+		font-size: 3.5rem;
+	}
+		&-block{
+			margin-bottom: 4rem;
+			.button{
+				margin-top: 1rem;
+			}
+		}
+	}
+
+.contacts{
+		background: url(../img/contacts/bg-contactsResize.png);
+		h2,p,{
+			text-align: center;
+		}
+
+		.map{
+			text-align: center;
+			iframe{
+				width: 30rem;
+			}
+		}
+		&_companyDetails{
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+			p{
+				text-align: center;
+				margin-left:14rem;
+
+			}
+		}
+	}
+	.col-sm-12{
+		text-align:center;
+	}
+	.footer-dev{
+		text-align:center;
+	}
+	.footer-input{
+		margin-bottom: 3rem;
+	}
+	footer{
+		.logo{
+			padding-bottom: 3rem;
+		}
+		.footer-contacts{
+			padding-bottom: 3rem;
+		}
+	}
+}
+
+
 
 
 
